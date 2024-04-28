@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <center>
+        <nav>
+            <li><a href="/">Home</a> </li>
+            <li><a href="/about">About</a> </li>
+            <li><a href="/login">Login</a> </li>
+        </nav>
+        <h1>Welcome To Add  Page</h1>
+
+        <section>
+            <div class="foodContainer">
+                <form action="/add-data" method="post">
+                    <label for="food-item">Food Item</label>
+                    <input type="text" name="food-item" id="food-item"><br>
+                    <label for="food-recipe">Food-Recipe</label>
+                    <textarea  name="food-recipe" id="food-recipe" cols="30" rows="10"></textarea><br>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                    <button class="foodAddingBtn">Add</button>
+                </form>
+            </div>
+        </section>
+        
+    </center>
+
+</body>
+</html>

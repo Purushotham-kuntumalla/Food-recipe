@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <center>
+        <nav>
+            <li><a href="/">Home</a> </li>
+            <li><a href="/about">About</a> </li>
+            <li><a href="/login">Login</a> </li>
+        </nav>
+        <h1>Welcome to Login Page</h1>
+    </center>
+<section>
+    <div class="form">
+        <form action="/data" method="post">
+            <input type="text" name="username" id="uname">
+            <input type="password" name="password" id="upassword">
+            <button id="btn">submit</button>
+        </form>
+    </div>
+</section>
+    
+
+   <script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+        let uname = document.getElementById('uname').value;
+let upassword = document.getElementById('upassword').value;
+    if(uname !=  ''){
+        
+        window.location.href = '/';
+    }
+    })
+
+   </script>
+</body>
+</html>
